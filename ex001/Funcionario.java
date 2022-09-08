@@ -1,21 +1,30 @@
 package ex001;
 
-import poo.Endereco;
-
 public class Funcionario {
 	private String nome;
 	private double salario;
+	private double matricula;
 	
 	
-	public Funcionario(String nome, double salario) {
+	public Funcionario(String nome, double salario, double matricula) {
 		this.nome = nome;
 		this.salario = salario;
+		this.matricula = matricula;
 	}
 	
 	public void exibeDados() {
 		System.out.println(nome);
 		System.out.println(salario);
 	}
+	
+	public double getMatricula() {
+		return matricula;
+	}
+
+	public void setMatricula(double matricula) {
+		this.matricula = matricula;
+	}
+
 	public String getNome() {
 		return nome;
 	}

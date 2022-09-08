@@ -13,9 +13,27 @@ public class Animal {
 	public static String caminhar() {
 		return "caminhando";
 	}
-	public static void main(String[] args) {
-		System.out.println(caminhar()); 
+	public String acao() {
+		return "açao";
 	}
+
+	public String getNome() {
+		return nome;
+	}
+
+	public void setNome(String nome) {
+		this.nome = nome;
+	}
+
+	public String getRaca() {
+		return raca;
+	}
+
+	public void setRaca(String raca) {
+		this.raca = raca;
+	}
+	
+	
 }
 
 
